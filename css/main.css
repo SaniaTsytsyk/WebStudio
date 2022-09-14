@@ -180,11 +180,12 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -234,8 +235,8 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ECECEC;
 }
 .header__container {
@@ -245,6 +246,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__logo {
@@ -334,7 +341,6 @@ body {
 
 .contact__link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -343,6 +349,16 @@ body {
 }
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .contact__link {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+  }
 }
 
 .header__content {
@@ -775,7 +791,6 @@ mob-menu-fixed {
 .footer {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer .logo {
   display: block;
@@ -1352,6 +1367,17 @@ mob-menu-fixed {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-size: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-conditional {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .checkbox-conditional {
+    font-size: 14px;
+  }
 }
 
 .modal__checkbox {
@@ -1361,12 +1387,22 @@ mob-menu-fixed {
 
 .checkbox__link {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
   cursor: pointer;
+  font-size: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__link {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .checkbox__link {
+    font-size: 14px;
+  }
 }
 
 .modal__label {
